@@ -158,4 +158,6 @@ int main()
 	}
 	for (auto t : line)
 		std::cout << t << " ";
+
+	t9.save_lib("words.txt");
 }

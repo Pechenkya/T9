@@ -17,17 +17,22 @@ class RwayTrie
 	template<typename N>
 	void put(Node* &node, Container key, N&& value, int d = 0);
 
+	void save_trie(Node* &node, std::ostream& stream);
+
 	std::vector<T> get_value(Node* node, Container key, int d = 0);
 
 	void return_value(Node* &node, std::vector<T> values, Container key, int d = 0);
 
 public:
+	void save_trie(std::ostream& stream);
 	void put(Container key, T&& value);
 	void put(Container key, T& value);
 	void return_value(std::vector<T> values, Container key);
 
 	std::vector<T> get_value(Container key);
 };
+
+
 
 
 template <typename T, size_t R, typename Container>
@@ -38,7 +43,6 @@ struct RwayTrie<T, R, Container>::Node
 
 	~Node();
 };
-
 
 template <typename T, size_t R, typename Container>
 RwayTrie<T, R, Container>::Node::~Node()
@@ -66,6 +70,24 @@ void RwayTrie<T, R, Container>::put(Node* &node, Container key, N&& value, int d
 	}
 	int c = get_node(d, key);
 	put(node->next[c], key, std::forward<N>(value), d + 1);
+}
+
+template<typename T, size_t R, typename Container>
+void RwayTrie<T, R, Container>::save_trie(Node *& node, std::ostream& stream)
+{
+	if (!node) return;
+	
+	if (!node->value.is_empty())
+	{
+		std::vector<T> temp_vec = node->value.return_heap();
+		for (auto t : temp_vec)
+			stream << t << std::endl;
+	}
+
+	for (int i = 1; i < 10; i++)
+	{
+		save_trie(node->next[i], stream);
+	}
 }
 
 template <typename T, size_t R, typename Container>
@@ -105,6 +127,13 @@ void RwayTrie<T, R, Container>::return_value(Node* &node, std::vector<T> values,
 	}
 	int c = get_node(d, key);
 	return_value(node->next[c], values, key, d + 1);
+}
+
+template<typename T, size_t R, typename Container>
+void RwayTrie<T, R, Container>::save_trie(std::ostream& stream)
+{
+	Node* temp_tpr = this->root.get();
+	save_trie(temp_tpr, stream);
 }
 
 template <typename T, size_t R, typename Container>

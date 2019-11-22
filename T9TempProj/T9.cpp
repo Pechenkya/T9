@@ -2,6 +2,12 @@
 #include <iostream>
 #include <fstream>
 
+std::ostream& operator<<(std::ostream& os, const Word& word)
+{
+	os << word.word << " " << word.popularity;
+	return os;
+}
+
 std::vector<int> T9::get_key(std::string value)
 {
 	unsigned int size = value.length();
@@ -62,6 +68,15 @@ void T9::fill_lib(std::string filename)
 		this->add_word(Word(temp, popl));
 	} while (temp != "/0");
 	inp.close();
+}
+
+void T9::save_lib(std::string filename)
+{
+	std::ofstream out(filename);
+	out.clear();
+	library.save_trie(out);
+	out << "/0";
+	out.close();
 }
 
 void T9::add_word(Word val)

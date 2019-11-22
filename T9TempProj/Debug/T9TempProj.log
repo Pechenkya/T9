@@ -6,4 +6,29 @@ d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(91): warn
 d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(107): warning C4018: <: несоответствие типов со знаком и без знака
 d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(120): warning C4018: >: несоответствие типов со знаком и без знака
 d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(122): warning C4018: <: несоответствие типов со знаком и без знака
+  T9.cpp
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\heap.h(121): warning C4018: <: несоответствие типов со знаком и без знака
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\heap.h(120): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(68): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Heap<T>::insert(T)"
+          with
+          [
+              T=Word
+          ]
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(41): note: выполняется компиляция ссылки на экземпляр шаблон класс "Heap<T>"
+          with
+          [
+              T=Word
+          ]
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(80): note: выполняется компиляция ссылки на экземпляр шаблон класс "RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::Node"
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(77): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(136): note: выполняется компиляция ссылки на экземпляр шаблон функции "void RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::save_trie(RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::Node *&,std::ostream &)"
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(148): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t9.cpp(85): note: выполняется компиляция ссылки на экземпляр шаблон функции "void RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::put(Container,T &)"
+          with
+          [
+              Container=std::vector<int,std::allocator<int>>,
+              T=Word
+          ]
+  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t9.h(47): note: выполняется компиляция ссылки на экземпляр шаблон класс "RwayTrie<Word,10,std::vector<int,std::allocator<int>>>"
+  Создание кода...
   T9TempProj.vcxproj -> D:\Progs\VisualStudioProjects\T-Nine\TempProj\T9\Debug\T-Nine.exe

@@ -51,6 +51,7 @@ class T9
 public:
 
 	void fill_lib(std::string filename = "words.txt");
+	void save_lib(std::string filename = "words.txt");
 	void add_word(Word val);
 	void return_words(std::vector <Word> val, std::string key);
 	std::vector<Word> get_words(std::string key);
