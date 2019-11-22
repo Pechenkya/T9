@@ -21,7 +21,7 @@ void print_interface()
 
 void remove_previous_popl(std::vector<Word> &words, int counter)
 {
-	if (counter > 1)
+	if (counter > 0)
 		words[counter - 1].popularity--;
 }
 
@@ -77,6 +77,7 @@ int main()
 				{
 					line.push_back(words[counter].word);
 					words[counter].popularity++;
+					remove_previous_popl(words, counter);
 				}
 				else if (counter == words.size())
 				{
@@ -86,11 +87,12 @@ int main()
 				else
 				{
 					while (counter > words.size())
-						counter -= words.size();
+						counter -= (words.size() + 1);
 					if (counter < words.size())
 					{
 						line.push_back(words[counter].word);
 						words[counter].popularity++;
+						remove_previous_popl(words, counter);
 					}
 					else if (counter == words.size())
 					{
@@ -106,6 +108,7 @@ int main()
 				{
 					temp = words[counter].word;
 					words[counter].popularity++;
+					remove_previous_popl(words, counter);
 				}
 				else if (counter == words.size())
 				{
@@ -115,11 +118,12 @@ int main()
 				else
 				{
 					while (counter > words.size())
-						counter -= words.size();
+						counter -= (words.size() + 1);
 					if (counter < words.size())
 					{
 						temp = words[counter].word;
 						words[counter].popularity++;
+						remove_previous_popl(words, counter);
 					}
 					else if (counter == words.size())
 					{

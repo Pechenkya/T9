@@ -1,40 +1,9 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (T9TempProj.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  T9.cpp
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\heap.h(121): warning C4018: <: несоответствие типов со знаком и без знака
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\heap.h(120): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(64): note: выполняется компиляция ссылки на экземпляр шаблон функции "void Heap<T>::insert(T)"
-          with
-          [
-              T=Word
-          ]
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(36): note: выполняется компиляция ссылки на экземпляр шаблон класс "Heap<T>"
-          with
-          [
-              T=Word
-          ]
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(76): note: выполняется компиляция ссылки на экземпляр шаблон класс "RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::Node"
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(73): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(135): note: выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<T,std::allocator<_Ty>> RwayTrie<T,10,std::vector<int,std::allocator<int>>>::get_value(RwayTrie<T,10,std::vector<int,std::allocator<int>>>::Node *,Container,int)"
-          with
-          [
-              T=Word,
-              _Ty=Word,
-              Container=std::vector<int,std::allocator<int>>
-          ]
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\rwaytrie.h(119): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t9.cpp(70): note: выполняется компиляция ссылки на экземпляр шаблон функции "void RwayTrie<Word,10,std::vector<int,std::allocator<int>>>::put(Container,T &)"
-          with
-          [
-              Container=std::vector<int,std::allocator<int>>,
-              T=Word
-          ]
-  d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t9.h(47): note: выполняется компиляция ссылки на экземпляр шаблон класс "RwayTrie<Word,10,std::vector<int,std::allocator<int>>>"
   T-Nine.cpp
 d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(76): warning C4018: <: несоответствие типов со знаком и без знака
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(88): warning C4018: >: несоответствие типов со знаком и без знака
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(105): warning C4018: <: несоответствие типов со знаком и без знака
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(117): warning C4018: >: несоответствие типов со знаком и без знака
-d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(119): warning C4018: <: несоответствие типов со знаком и без знака
-  Создание кода...
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(89): warning C4018: >: несоответствие типов со знаком и без знака
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(91): warning C4018: <: несоответствие типов со знаком и без знака
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(107): warning C4018: <: несоответствие типов со знаком и без знака
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(120): warning C4018: >: несоответствие типов со знаком и без знака
+d:\progs\visualstudioprojects\t-nine\tempproj\t9\t9tempproj\t-nine.cpp(122): warning C4018: <: несоответствие типов со знаком и без знака
   T9TempProj.vcxproj -> D:\Progs\VisualStudioProjects\T-Nine\TempProj\T9\Debug\T-Nine.exe
